@@ -12,7 +12,7 @@ struct SplashView: View {
                 GeometryReader { proxy in
                     let size = min(proxy.size.width, proxy.size.height)
                     ZStack {
-                        Color(AppColors.cardBackground)
+                        Color(AppColors.splashBackground)
                             .ignoresSafeArea()
                         
                         VStack(spacing: 16) {
