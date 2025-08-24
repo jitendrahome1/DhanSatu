@@ -206,7 +206,7 @@ struct LoginView: View {
     let digits = input.filter { $0.isNumber }
     guard digits.count >= 4 else { return input }
     let last4 = digits.suffix(4)
-    return "+** \u2022\u2022\u2022\u2022 \(String(last4))"
+    return "+** \u{2022}\u{2022}\u{2022}\u{2022} \(String(last4))"
   }
 }
 
@@ -262,6 +262,6 @@ fileprivate struct OTPBoxesView: View {
   private func character(at index: Int) -> String {
     let chars = Array(text)
     if index < chars.count { return String(chars[index]) }
-    return "\u00a0"
+    return "\u{00A0}"
   }
 }
