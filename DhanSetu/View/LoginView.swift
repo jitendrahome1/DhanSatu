@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct LoginView: View {
-  @Binding var isAuthenticated: Bool
+  @EnvironmentObject var auth: AuthSession
 
   @State private var email: String = ""
   @State private var password: String = ""
@@ -128,7 +128,7 @@ struct LoginView: View {
     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
       isLoading = false
       if isValidEmail && isValidPassword {
-        isAuthenticated = true
+        auth.signIn()
       } else {
         errorMessage = "Invalid credentials. Try again."
       }
