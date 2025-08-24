@@ -136,7 +136,3 @@ struct LoginView: View {
   }
 }
 
-#Preview {
-  @Previewable @State var isAuthenticated = false
-  return LoginView(isAuthenticated: $isAuthenticated)
-}
