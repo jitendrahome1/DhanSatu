@@ -1,24 +1,56 @@
-//
-//  ContentView.swift
-//  DhanSetu
-//
-//  Created by Jitendra Agarwal on 23/06/25.
-//
-
 import SwiftUI
 
-struct ContentView: View {
+struct OrderView: View {
+    @StateObject private var viewModel = OrderViewModel()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            Group {
+                if viewModel.isLoading {
+                    ProgressView("Loading Orders...")
+                } else if let error = viewModel.errorMessage {
+                    Text(error)
+                        .foregroundColor(.red)
+                        .padding()
+                } else {
+                    List(viewModel.orders) { order in
+                        OrderRow(order: order)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                }
+            }
+            .navigationTitle("Dhan Orders")
+            .onAppear {
+                viewModel.fetchOrders()
+            }
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct OrderRow: View {
+    let order: Order
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            HStack {
+                Text(order.tradingSymbol)
+                    .font(.headline)
+                Spacer()
+                Text(order.orderStatus)
+                    .font(.subheadline)
+                    .foregroundColor(order.orderStatus == "TRADED" ? .green : .orange)
+            }
+            HStack {
+                Text("Qty: \(order.quantity)")
+                Text("Price: \(String(format: "%.2f", order.price))")
+                Text(order.transactionType)
+                    .foregroundColor(order.transactionType == "BUY" ? .blue : .red)
+            }
+            .font(.caption)
+            Text("Time: \(order.createTime)")
+                .font(.caption2)
+                .foregroundColor(.secondary)
+        }
+        .padding(.vertical, 4)
+    }
 }

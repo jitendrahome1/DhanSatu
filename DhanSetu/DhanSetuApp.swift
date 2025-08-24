@@ -11,7 +11,12 @@ import SwiftUI
 struct DhanSetuApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           // MainStockScreenView()
+           // MainTabView()
+            SplashView()
+           // SettingsView()
+            //PortfolioScreen()
         }
+        
     }
 }
