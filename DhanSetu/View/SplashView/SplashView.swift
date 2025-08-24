@@ -4,13 +4,10 @@ struct SplashView: View {
     @State private var isActive = false
     @State private var scale: CGFloat = 0.8
     @State private var opacity = 0.5
-    @StateObject private var tabBarVisibility = TabBarVisibility()
     
     var body: some View {
         if isActive {
-            MainTabView()
-                .environmentObject(tabBarVisibility)
-                // 👉 Replace with your HomeView
+            AuthRootView()
         } else {
             ZStack {
                 Color(AppColors.cardBackground) // Use your dark blue background
