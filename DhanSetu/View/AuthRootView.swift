@@ -1,19 +1,21 @@
 import SwiftUI
 
 struct AuthRootView: View {
-  @State private var isAuthenticated: Bool = false
+  @StateObject private var auth = AuthSession()
   @StateObject private var tabBarVisibility = TabBarVisibility()
 
   var body: some View {
     Group {
-      if isAuthenticated {
+      if auth.isAuthenticated {
         MainTabView()
           .environmentObject(tabBarVisibility)
+          .environmentObject(auth)
       } else {
-        LoginView(isAuthenticated: $isAuthenticated)
+        LoginView()
+          .environmentObject(auth)
       }
     }
-    .animation(.default, value: isAuthenticated)
+    .animation(.default, value: auth.isAuthenticated)
   }
 }
 

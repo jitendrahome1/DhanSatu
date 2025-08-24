@@ -3,6 +3,7 @@ import SwiftUI
 struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
     @EnvironmentObject var tabBarVisibility: TabBarVisibility
+    @EnvironmentObject var auth: AuthSession
     
     var body: some View {
         VStack(spacing: 0) {
@@ -70,7 +71,7 @@ struct SettingsView: View {
                     )
                     
                     LogoutButton {
-                        print("Logout tapped")
+                        auth.signOut()
                     }
                     
                     FooterView(
@@ -97,5 +98,7 @@ struct SettingsView: View {
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
+            .environmentObject(TabBarVisibility())
+            .environmentObject(AuthSession(isAuthenticated: true))
     }
 }
