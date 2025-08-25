@@ -29,39 +29,50 @@ struct LoginView: View {
   private var canVerify: Bool { otpCode.count == 6 && !isVerifying }
 
   var body: some View {
-    VStack(spacing: 20) {
-      Spacer(minLength: 24)
+    ZStack {
+      LinearGradient(colors: [Color(.systemGray6), Color(.white)], startPoint: .top, endPoint: .bottom)
+        .ignoresSafeArea()
 
-      VStack(spacing: 6) {
-        Text("Sign in")
-          .font(.system(size: 28, weight: .bold))
-        Text(stage == .phone ? "Enter your mobile number" : "Enter the 6-digit code")
-          .foregroundStyle(.secondary)
-      }
+      VStack(spacing: 20) {
+        Spacer(minLength: 24)
 
-      Group {
-        if stage == .phone {
-          phoneEntry
-        } else {
-          otpEntry
+        Image("splashScreen")
+          .resizable()
+          .scaledToFit()
+          .frame(width: 120, height: 120)
+          .accessibilityHidden(true)
+
+        VStack(spacing: 6) {
+          Text("Sign in")
+            .font(.system(size: 28, weight: .bold))
+          Text(stage == .phone ? "Enter your mobile number" : "Enter the 6-digit code")
+            .foregroundStyle(.secondary)
         }
-      }
 
-      if let error = errorMessage {
-        Text(error)
-          .font(.footnote)
-          .foregroundStyle(.red)
-      }
+        Group {
+          if stage == .phone {
+            phoneEntry
+          } else {
+            otpEntry
+          }
+        }
 
-      if let info = infoMessage {
-        Text(info)
-          .font(.footnote)
-          .foregroundStyle(.secondary)
-      }
+        if let error = errorMessage {
+          Text(error)
+            .font(.footnote)
+            .foregroundStyle(.red)
+        }
 
-      Spacer()
+        if let info = infoMessage {
+          Text(info)
+            .font(.footnote)
+            .foregroundStyle(.secondary)
+        }
+
+        Spacer()
+      }
+      .padding(.horizontal, 20)
     }
-    .padding(.horizontal, 20)
     .onDisappear { stopResendTimer() }
   }
 
