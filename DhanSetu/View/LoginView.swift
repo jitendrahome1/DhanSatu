@@ -19,6 +19,7 @@ struct LoginView: View {
   @State private var generatedOTP: String = ""
   @State private var resendSecondsRemaining: Int = 0
   @State private var resendTimer: Timer?
+  @State private var countryCode: String = "+91"
 
   private var isValidPhone: Bool {
     let digits = phoneNumber.filter { $0.isNumber }
@@ -80,6 +81,21 @@ struct LoginView: View {
     VStack(spacing: 16) {
       HStack(spacing: 10) {
         Image(systemName: "phone.fill").foregroundStyle(.green)
+        Menu {
+          Button("+91 India") { countryCode = "+91" }
+          Button("+1 USA") { countryCode = "+1" }
+          Button("+44 UK") { countryCode = "+44" }
+          Button("+971 UAE") { countryCode = "+971" }
+        } label: {
+          HStack(spacing: 4) {
+            Text(countryCode)
+              .font(.subheadline.weight(.semibold))
+            Image(systemName: "chevron.down")
+              .font(.caption2)
+              .foregroundStyle(.secondary)
+          }
+        }
+        .menuIndicator(.hidden)
         TextField("Mobile number", text: Binding(
           get: { phoneNumber },
           set: { newValue in
@@ -94,6 +110,13 @@ struct LoginView: View {
       }
       .padding(14)
       .background(RoundedRectangle(cornerRadius: 12).strokeBorder(.quaternary))
+
+      if phoneNumber.filter({ $0.isNumber }).count < 10 {
+        Text("Enter 10-digit number")
+          .font(.footnote)
+          .foregroundStyle(.secondary)
+          .frame(maxWidth: .infinity, alignment: .leading)
+      }
 
       Button {
         sendOTP()
@@ -221,9 +244,9 @@ struct LoginView: View {
 
   private func maskedPhone(_ input: String) -> String {
     let digits = input.filter { $0.isNumber }
-    guard digits.count >= 4 else { return input }
+    guard digits.count >= 4 else { return "\(countryCode) \(input)" }
     let last4 = digits.suffix(4)
-    return "+** \u{2022}\u{2022}\u{2022}\u{2022} \(String(last4))"
+    return "\(countryCode) \u{2022}\u{2022}\u{2022}\u{2022} \(String(last4))"
   }
 }
 
