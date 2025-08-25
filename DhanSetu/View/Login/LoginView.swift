@@ -26,13 +26,22 @@ struct LoginView: View {
 
     var body: some View {
         ZStack {
-            LinearGradient(colors: [Color(.systemGray6), Color(.white)],
-                           startPoint: .top, endPoint: .bottom)
-                .ignoresSafeArea()
+            // Professional Gradient Background
+            LinearGradient(
+                colors: [
+                    Color(red: 0.0, green: 0.35, blue: 0.65), // deep blue
+                    Color(red: 0.0, green: 0.55, blue: 0.85), // lighter blue
+                    Color.white.opacity(0.95)                 // soft white overlay
+                ],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .ignoresSafeArea()
 
             VStack(spacing: 20) {
                 Spacer(minLength: 24)
 
+                // Logo / Splash
                 Image("splashScreen")
                     .resizable()
                     .scaledToFit()
@@ -42,8 +51,9 @@ struct LoginView: View {
                 VStack(spacing: 6) {
                     Text("Sign in")
                         .font(.system(size: 28, weight: .bold))
+                        .foregroundColor(.white)
                     Text(stage == .phone ? "Enter your mobile number" : "Enter the 6-digit code")
-                        .foregroundStyle(.secondary)
+                        .foregroundColor(Color.white.opacity(0.8))
                 }
 
                 Group {
@@ -107,7 +117,6 @@ struct LoginView: View {
             generatedOTP = String((0..<6).map { _ in String(Int.random(in: 0...9)) }.joined())
             stage = .otp
             startResendTimer()
-            // infoMessage = "Debug OTP: \(generatedOTP)" // For debugging
         }
     }
 
