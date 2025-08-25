@@ -22,7 +22,7 @@ struct LoginView: View {
 
   private var isValidPhone: Bool {
     let digits = phoneNumber.filter { $0.isNumber }
-    return digits.count >= 10 && digits.count <= 13
+    return digits.count == 10
   }
 
   private var canSendOTP: Bool { isValidPhone && !isSendingOTP }
@@ -80,7 +80,13 @@ struct LoginView: View {
     VStack(spacing: 16) {
       HStack(spacing: 10) {
         Image(systemName: "phone.fill").foregroundStyle(.green)
-        TextField("Mobile number", text: $phoneNumber)
+        TextField("Mobile number", text: Binding(
+          get: { phoneNumber },
+          set: { newValue in
+            let filtered = newValue.filter { $0.isNumber }
+            phoneNumber = String(filtered.prefix(10))
+          }
+        ))
           .keyboardType(.numberPad)
           .textContentType(.telephoneNumber)
           .autocorrectionDisabled()
