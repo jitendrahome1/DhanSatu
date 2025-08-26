@@ -56,7 +56,9 @@ func routes(_ app: Application) throws {
     let signals = app.grouped("api", "signals")
 
     signals.get { req async throws -> [StockSignal] in
-        try await StockSignal.query(on: req.db).sort(.id, .descending).all()
+        try await StockSignal.query(on: req.db)
+            .sort(\.$createdAt, .descending)
+            .all()
     }
 
     signals.get(":id") { req async throws -> StockSignal in

@@ -73,7 +73,12 @@
       form.addEventListener('submit', async (e) => {
         e.preventDefault()
         try {
-          await api('/api/signals', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(serialize(form)) })
+          const res = await fetch('/api/signals', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(serialize(form)) })
+          if (!res.ok) {
+            const err = await res.json().catch(()=>({}))
+            alert('Create failed: ' + (err.reason || res.status))
+            return
+          }
           form.reset()
           alert('Signal created. Open All Signals to view.')
         } catch (e) { alert(e.error || 'Error') }
