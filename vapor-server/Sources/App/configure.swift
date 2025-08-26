@@ -18,12 +18,47 @@ public func configure(_ app: Application) throws {
     ))
     app.middleware.use(cors)
 
-    // Ensure JSON dates use ISO8601 for decode/encode (matches HTML form)
+    // Configure flexible date handling for JSON
     let jsonEncoder = JSONEncoder()
     jsonEncoder.dateEncodingStrategy = .iso8601
     ContentConfiguration.global.use(encoder: jsonEncoder, for: .json)
+    
     let jsonDecoder = JSONDecoder()
-    jsonDecoder.dateDecodingStrategy = .iso8601
+    jsonDecoder.dateDecodingStrategy = .custom { decoder in
+        let container = try decoder.singleValueContainer()
+        let dateString = try container.decode(String.self)
+        
+        // Try ISO8601 format first
+        let isoFormatter = ISO8601DateFormatter()
+        if let date = isoFormatter.date(from: dateString) {
+            return date
+        }
+        
+        // Try various other formats
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        
+        let formats = [
+            "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
+            "yyyy-MM-dd'T'HH:mm:ssZ",
+            "yyyy-MM-dd'T'HH:mm:ss",
+            "yyyy-MM-dd HH:mm:ss",
+            "yyyy-MM-dd"
+        ]
+        
+        for format in formats {
+            formatter.dateFormat = format
+            if let date = formatter.date(from: dateString) {
+                return date
+            }
+        }
+        
+        throw DecodingError.dataCorruptedError(
+            in: container,
+            debugDescription: "Date string does not match any expected format: \(dateString)"
+        )
+    }
     ContentConfiguration.global.use(decoder: jsonDecoder, for: .json)
 
     try routes(app)
