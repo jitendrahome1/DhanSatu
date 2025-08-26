@@ -48,6 +48,11 @@ func routes(_ app: Application) throws {
         return req.fileio.streamFile(at: path)
     }
 
+    app.get("signals-list") { req -> Response in
+        let path = req.application.directory.publicDirectory + "signals-list.html"
+        return req.fileio.streamFile(at: path)
+    }
+
     let signals = app.grouped("api", "signals")
 
     signals.get { req async throws -> [StockSignal] in
