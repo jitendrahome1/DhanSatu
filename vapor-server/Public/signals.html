@@ -18,9 +18,13 @@
       .btn { padding: 8px 10px; border: 1px solid #ddd; background: white; cursor: pointer; }
       .btn.primary { background: #0ea5e9; color: white; border-color: #0284c7; }
       .btn.danger { background: #ef4444; color: white; border-color: #dc2626; }
-      .card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 14px; }
-      .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
-      @media (min-width: 900px) { .grid { grid-template-columns: 380px 1fr; } }
+      .card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 14px; box-sizing: border-box; }
+      .grid { display: flex; flex-direction: column; gap: 16px; }
+      @media (min-width: 900px) {
+        .grid { flex-direction: row; align-items: flex-start; }
+        .grid .card:first-child { flex: 0 0 380px; max-width: 380px; }
+        .grid .card:last-child { flex: 1 1 auto; min-width: 0; }
+      }
     </style>
   </head>
   <body>
