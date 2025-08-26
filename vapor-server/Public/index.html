@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dhansatu Admin (Vapor)</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial; margin: 20px; }
+      .container { max-width: 980px; margin: 0 auto; }
+      table { width: 100%; border-collapse: collapse; }
+      th, td { padding: 8px 10px; border-bottom: 1px solid #eee; text-align: left; }
+      th { background: #fafafa; }
+      input, select { padding: 8px; }
+      .row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 10px; }
+      .actions { display: flex; gap: 6px; }
+      .btn { padding: 8px 10px; border: 1px solid #ddd; background: white; cursor: pointer; }
+      .btn.primary { background: #0ea5e9; color: white; border-color: #0284c7; }
+      .btn.danger { background: #ef4444; color: white; border-color: #dc2626; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dhansatu Admin - Stock Signals (Swift Vapor)</h1>
+      <form id="create-form">
+        <div class="row">
+          <input name="stockName" placeholder="Stock Name" required />
+          <input name="currentPrice" type="number" step="0.01" placeholder="Current Price" required />
+          <input name="profitPercent" type="number" step="0.01" placeholder="Profit %" required />
+          <select name="status" required>
+            <option value="In Buying Range">In Buying Range</option>
+            <option value="Active">Active</option>
+            <option value="Closed">Closed</option>
+          </select>
+        </div>
+        <div class="row">
+          <input name="stopLoss" type="number" step="0.01" placeholder="Stop Loss" required />
+          <input name="target" type="number" step="0.01" placeholder="Target" required />
+          <input name="entryDate" type="datetime-local" required />
+          <button class="btn primary" type="submit">Create</button>
+        </div>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Stock</th>
+            <th>Price</th>
+            <th>Profit %</th>
+            <th>SL</th>
+            <th>Target</th>
+            <th>Status</th>
+            <th>Entry</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <script>
+      const base = '' // same-origin
+      const api = (p, o) => fetch(p, o).then(r => r.ok ? r.json().catch(() => ({})) : r.json().then(e => Promise.reject(e)))
+      const rows = document.getElementById('rows')
+      const form = document.getElementById('create-form')
+      function serialize(form) {
+        const data = Object.fromEntries(new FormData(form).entries())
+        data.currentPrice = parseFloat(data.currentPrice)
+        data.profitPercent = parseFloat(data.profitPercent)
+        data.stopLoss = parseFloat(data.stopLoss)
+        data.target = parseFloat(data.target)
+        data.entryDate = new Date(data.entryDate).toISOString()
+        return data
+      }
+      function render(list) {
+        rows.innerHTML = ''
+        for (const s of list) {
+          const tr = document.createElement('tr')
+          tr.innerHTML = `
+            <td>${s.id}</td>
+            <td>${s.stockName}</td>
+            <td>${s.currentPrice}</td>
+            <td>${s.profitPercent}</td>
+            <td>${s.stopLoss}</td>
+            <td>${s.target}</td>
+            <td>${s.status}</td>
+            <td>${new Date(s.entryDate).toLocaleString()}</td>
+            <td class="actions">
+              <button class="btn danger" data-del="${s.id}">Delete</button>
+            </td>
+          `
+          rows.appendChild(tr)
+        }
+      }
+      async function refresh() {
+        const list = await api('/api/signals')
+        render(list)
+      }
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault()
+        try {
+          await api('/api/signals', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(serialize(form)) })
+          form.reset()
+          await refresh()
+        } catch (e) { alert(e.error || 'Error') }
+      })
+      rows.addEventListener('click', async (e) => {
+        const id = e.target.getAttribute('data-del')
+        if (id) {
+          if (!confirm('Delete this signal?')) return
+          await fetch(`/api/signals/${id}`, { method: 'DELETE' })
+          await refresh()
+          return
+        }
+      })
+      refresh()
+    </script>
+  </body>
+  </html>
+
