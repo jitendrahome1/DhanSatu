@@ -7,6 +7,17 @@ public func configure(_ app: Application) throws {
 
     app.migrations.add(CreateStockSignal())
 
+    // Serve Public/ static files
+    app.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
+
+    // Enable CORS for browser access to API
+    let cors = CORSMiddleware(configuration: .init(
+        allowedOrigin: .all,
+        allowedMethods: [.GET, .POST, .PUT, .DELETE, .OPTIONS],
+        allowedHeaders: [.accept, .contentType, .origin, .authorization]
+    ))
+    app.middleware.use(cors)
+
     try routes(app)
 }
 
