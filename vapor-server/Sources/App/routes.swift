@@ -42,6 +42,12 @@ func routes(_ app: Application) throws {
         return "Dhansatu Vapor Server is running"
     }
 
+    // Convenience route: serve the static signals page without .html suffix
+    app.get("signals") { req -> Response in
+        let path = req.application.directory.publicDirectory + "signals.html"
+        return req.fileio.streamFile(at: path)
+    }
+
     let signals = app.grouped("api", "signals")
 
     signals.get { req async throws -> [StockSignal] in
