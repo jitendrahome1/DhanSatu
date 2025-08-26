@@ -1,7 +1,7 @@
 import Vapor
 import Fluent
 
-struct StockSignal: Content, Model {
+final class StockSignal: Model, Content {
     static let schema = "stock_signals"
     @ID(key: .id) var id: UUID?
     @Field(key: "stockName") var stockName: String
