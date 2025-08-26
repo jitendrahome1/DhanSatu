@@ -13,16 +13,8 @@ struct MainStockScreenView: View {
                 TabSelectionView(selected: $selectedTab)
 
                 ScrollView {
-                    StockSignalCardView(
-                        stockName: "ASAL",
-                        currentPrice: "579.90",
-                        profitPercent: "19.71%",
-                        stopLoss: "534.00",
-                        target: "700.00",
-                        status: "In Buying Range",
-                        entryDate: "23 Jun, 12:43 PM"
-                    )
-                    .padding(.top)
+                    StockSignalsListView()
+                        .padding(.top)
                 }
 
                 Spacer()

@@ -1,26 +1,33 @@
 import SwiftUI
 
 struct StockSignalCardView: View {
-    var stockName: String
-    var currentPrice: String
-    var profitPercent: String
-    var stopLoss: String
-    var target: String
-    var status: String
-    var entryDate: String
+    let stockSignal: StockSignal
+    
+    private var statusColor: Color {
+        switch stockSignal.status.lowercased() {
+        case "active":
+            return .green
+        case "in buying range":
+            return .orange
+        case "closed":
+            return .red
+        default:
+            return .gray
+        }
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             // Header with stock name and price
             HStack {
-                Text(stockName)
+                Text(stockSignal.stockName)
                     .font(.headline)
                     .foregroundColor(.white)
                 Image(systemName: "chart.bar.fill")
                     .foregroundColor(.orange)
                 Spacer()
                 VStack(alignment: .trailing) {
-                    Text("₹\(currentPrice)")
+                    Text("₹\(stockSignal.formattedCurrentPrice)")
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                     Text("-₹10.65 (-1.80%)")
@@ -29,7 +36,7 @@ struct StockSignalCardView: View {
                 }
             }
 
-            Text("Entry: \(entryDate)")
+            Text("Entry: \(stockSignal.formattedEntryDate)")
                 .font(.caption)
                 .foregroundColor(.gray)
 
@@ -47,7 +54,7 @@ struct StockSignalCardView: View {
                     Text("Potential Profit")
                         .font(.caption2)
                         .foregroundColor(.gray)
-                    Text(profitPercent)
+                    Text(stockSignal.formattedProfitPercent)
                         .foregroundColor(.green)
                 }
 
@@ -57,8 +64,8 @@ struct StockSignalCardView: View {
                     Text("Status")
                         .font(.caption2)
                         .foregroundColor(.gray)
-                    Text(status)
-                        .foregroundColor(.green)
+                    Text(stockSignal.status)
+                        .foregroundColor(statusColor)
                 }
             }
 
@@ -68,7 +75,7 @@ struct StockSignalCardView: View {
                     Text("Stop Loss")
                         .font(.caption2)
                         .foregroundColor(.gray)
-                    Text("₹\(stopLoss)")
+                    Text("₹\(stockSignal.formattedStopLoss)")
                         .foregroundColor(.white)
                 }
 
@@ -78,7 +85,7 @@ struct StockSignalCardView: View {
                     Text("Target")
                         .font(.caption2)
                         .foregroundColor(.gray)
-                    Text("₹\(target)")
+                    Text("₹\(stockSignal.formattedTarget)")
                         .foregroundColor(.white)
                 }
             }
@@ -103,4 +110,19 @@ struct StockSignalCardView: View {
         )
         .padding(.horizontal)
     }
+}
+
+#Preview {
+    StockSignalCardView(stockSignal: StockSignal(
+        id: "1",
+        stockName: "ASAL",
+        currentPrice: 579.90,
+        profitPercent: 19.71,
+        stopLoss: 534.00,
+        target: 700.00,
+        status: "In Buying Range",
+        entryDate: "2024-06-23T12:43:00Z",
+        createdAt: "2024-06-23T12:43:00Z",
+        updatedAt: "2024-06-23T12:43:00Z"
+    ))
 }
