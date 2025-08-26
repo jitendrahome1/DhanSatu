@@ -25,16 +25,15 @@
   <body>
     <div class="container">
       <header>
-        <h1>Stock Signals</h1>
+        <h1>Create Stock Signal</h1>
         <nav>
           <a href="/">Home</a>
-          <a href="/signals.html">Signals</a>
+          <a href="/signals-list.html">View All Signals</a>
         </nav>
       </header>
 
       <div class="grid">
         <div class="card">
-          <h3>Create Signal</h3>
           <form id="create-form">
             <div class="row">
               <input name="stockName" placeholder="Stock Name" required />
@@ -50,43 +49,17 @@
               <input name="stopLoss" type="number" step="0.01" placeholder="Stop Loss" required />
               <input name="target" type="number" step="0.01" placeholder="Target" required />
               <input name="entryDate" type="datetime-local" required />
-              <button class="btn primary" type="submit">Create</button>
+              <button class="btn primary" type="submit">Create Signal</button>
             </div>
           </form>
-        </div>
-
-        <div class="card">
-          <div style="display:flex;align-items:center;justify-content:space-between;">
-            <h3>All Signals</h3>
-            <button class="btn" id="refresh">Refresh</button>
-          </div>
-          <div style="overflow:auto;">
-            <table>
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Stock</th>
-                  <th>Price</th>
-                  <th>Profit %</th>
-                  <th>SL</th>
-                  <th>Target</th>
-                  <th>Status</th>
-                  <th>Entry</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-              <tbody id="rows"></tbody>
-            </table>
-          </div>
+          <p style="margin-top:8px;font-size:12px;color:#64748b;">After creating, view it under <a href="/signals-list.html">All Signals</a>.</p>
         </div>
       </div>
     </div>
 
     <script>
       const api = (p, o) => fetch(p, o).then(r => r.ok ? r.json().catch(() => ({})) : r.json().then(e => Promise.reject(e)))
-      const rows = document.getElementById('rows')
       const form = document.getElementById('create-form')
-      const refreshBtn = document.getElementById('refresh')
 
       function serialize(form) {
         const data = Object.fromEntries(new FormData(form).entries())
@@ -97,49 +70,15 @@
         data.entryDate = new Date(data.entryDate).toISOString()
         return data
       }
-      function render(list) {
-        rows.innerHTML = ''
-        for (const s of list) {
-          const tr = document.createElement('tr')
-          tr.innerHTML = `
-            <td>${s.id}</td>
-            <td>${s.stockName}</td>
-            <td>${s.currentPrice}</td>
-            <td>${s.profitPercent}</td>
-            <td>${s.stopLoss}</td>
-            <td>${s.target}</td>
-            <td>${s.status}</td>
-            <td>${new Date(s.entryDate).toLocaleString()}</td>
-            <td class="actions">
-              <button class="btn danger" data-del="${s.id}">Delete</button>
-            </td>
-          `
-          rows.appendChild(tr)
-        }
-      }
-      async function refresh() {
-        const list = await api('/api/signals')
-        render(list)
-      }
       form.addEventListener('submit', async (e) => {
         e.preventDefault()
         try {
           await api('/api/signals', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(serialize(form)) })
           form.reset()
-          await refresh()
+          alert('Signal created. Open All Signals to view.')
         } catch (e) { alert(e.error || 'Error') }
       })
-      rows.addEventListener('click', async (e) => {
-        const id = e.target.getAttribute('data-del')
-        if (id) {
-          if (!confirm('Delete this signal?')) return
-          await fetch(`/api/signals/${id}`, { method: 'DELETE' })
-          await refresh()
-          return
-        }
-      })
-      refreshBtn.addEventListener('click', refresh)
-      refresh()
+      // Creation-only page; no listing logic here.
     </script>
   </body>
   </html>
