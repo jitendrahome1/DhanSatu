@@ -18,6 +18,16 @@ public func configure(_ app: Application) throws {
     ))
     app.middleware.use(cors)
 
+    // Ensure JSON dates use ISO8601 for decode/encode (matches HTML form)
+    var contentConfig = ContentConfiguration()
+    let jsonEncoder = JSONEncoder()
+    jsonEncoder.dateEncodingStrategy = .iso8601
+    let jsonDecoder = JSONDecoder()
+    jsonDecoder.dateDecodingStrategy = .iso8601
+    contentConfig.use(encoder: jsonEncoder, for: .json)
+    contentConfig.use(decoder: jsonDecoder, for: .json)
+    app.contentConfiguration = contentConfig
+
     try routes(app)
 }
 
