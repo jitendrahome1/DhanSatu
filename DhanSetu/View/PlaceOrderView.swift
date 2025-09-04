@@ -78,10 +78,18 @@ struct PlaceOrderView: View {
     }
 
     func placeOrder() {
+        // Use localhost for simulator, IP address for physical device
+        #if targetEnvironment(simulator)
+        let baseURL = "http://localhost:8000/place_order"
+        #else
+        // Using the computer's IP address for physical device testing
+        let baseURL = "http://192.168.1.8:8000/place_order"
+        #endif
+        
         guard let securityId = stockNameToSecurityId[stockName.uppercased()],
               let qty = Int(quantity),
               let prc = Double(price),
-              let url = URL(string: "http://localhost:8000/place_order")
+              let url = URL(string: baseURL)
         else {
             resultMessage = "Invalid input"
             return

@@ -6,7 +6,15 @@ class OrderViewModel: ObservableObject {
     @Published var errorMessage: String?
 
     func fetchOrders() {
-        guard let url = URL(string: "http://localhost:8000/") else { return }
+        // Use localhost for simulator, IP address for physical device
+        #if targetEnvironment(simulator)
+        let baseURL = "http://localhost:8000/"
+        #else
+        // Using the computer's IP address for physical device testing
+        let baseURL = "http://192.168.1.8:8000/"
+        #endif
+        
+        guard let url = URL(string: baseURL) else { return }
         isLoading = true
         errorMessage = nil
         URLSession.shared.dataTask(with: url) { data, response, error in

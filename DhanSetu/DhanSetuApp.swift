@@ -13,10 +13,12 @@ struct DhanSetuApp: App {
         WindowGroup {
            // MainStockScreenView()
            // MainTabView()
-            SplashView()
+           // SplashView()
            // SettingsView()
-            //PortfolioScreen()
+           // PortfolioScreen()
+            
+            // New Dhan app with Home and Signals navigation
+            ContentView()
         }
-        
     }
 }

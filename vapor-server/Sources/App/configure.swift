@@ -3,6 +3,10 @@ import Fluent
 import FluentSQLiteDriver
 
 public func configure(_ app: Application) throws {
+    
+    // 👇 Set custom host & port here
+      app.http.server.configuration.hostname = "0.0.0.0"   // listens on all interfaces
+      app.http.server.configuration.port = 8080            // change to your port
     app.databases.use(.sqlite(.file("db.sqlite")), as: .sqlite)
 
     app.migrations.add(CreateStockSignal())

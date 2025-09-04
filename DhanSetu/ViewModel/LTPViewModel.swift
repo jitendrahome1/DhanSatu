@@ -6,8 +6,18 @@ class LTPViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var errorMessage: String?
 
+    // Base URL for the LTP server
+    private var baseURL: String {
+        #if targetEnvironment(simulator)
+            return "http://localhost:8000"
+        #else
+            // Using the computer's IP address for physical device testing
+            return "http://192.168.1.8:8000"
+        #endif
+    }
+    
     func fetchLTP(securityId: String, exchangeSegment: String) {
-        guard let url = URL(string: "http://localhost:8000/ltp?security_id=\(securityId)&exchange_segment=\(exchangeSegment)") else {
+        guard let url = URL(string: "\(baseURL)/ltp?security_id=\(securityId)&exchange_segment=\(exchangeSegment)") else {
             self.errorMessage = "Invalid URL"
             return
         }
