@@ -10,22 +10,9 @@
 		39E2B2A62E09846E008E456E /* DhanSetu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DhanSetu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		AAE1C0B42E5F7499005BA81F /* Exceptions for "DhanSetu" folder in "DhanSetu" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 39E2B2A52E09846E008E456E /* DhanSetu */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		39E2B2A82E09846E008E456E /* DhanSetu */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				AAE1C0B42E5F7499005BA81F /* Exceptions for "DhanSetu" folder in "DhanSetu" target */,
-			);
 			path = DhanSetu;
 			sourceTree = "<group>";
 		};
