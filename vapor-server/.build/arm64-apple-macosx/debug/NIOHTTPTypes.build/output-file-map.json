@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/NIOHTTPTypes.build/master.swiftdeps"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/checkouts/swift-nio-extras/Sources/NIOHTTPTypes/NIOHTTPTypes.swift": {
+    "dependencies": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/NIOHTTPTypes.build/NIOHTTPTypes.d",
+    "object": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/NIOHTTPTypes.build/NIOHTTPTypes.swift.o",
+    "swiftmodule": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/NIOHTTPTypes.build/NIOHTTPTypes~partial.swiftmodule",
+    "swift-dependencies": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/NIOHTTPTypes.build/NIOHTTPTypes.swiftdeps"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "source": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Login/LoginView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Sign in",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter your mobile number",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 55
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter the 6-digit code",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 55
+        }
+      }
+    ]
+  },
+  "version": 1
+}

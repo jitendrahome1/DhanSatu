@@ -7,24 +7,14 @@ struct SettingsView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            // Custom Navigation Bar with Back Button
-            HStack {
-                Button(action: {
-                    dismiss()
-                }) {
-                    Image(systemName: "chevron.left")
-                        .font(.system(size: 20, weight: .semibold))
-                        .foregroundColor(.blue) // same color as default back button
-                }
-                Text("Settings")
-                    .font(.headline)
-                    .foregroundColor(.primary)
-                Spacer()
-            }
-            .padding()
             
-            Divider() // optional: thin line like system nav bar
+            // 🔹 Reusable CustomNavHeader
+            CustomNavHeader(
+                            style: .settings,
+                            onBackTapped: { dismiss() }
+                        )
             
+            // 🔹 Main Content
             ScrollView {
                 VStack(spacing: 16) {
                     
@@ -71,7 +61,7 @@ struct SettingsView: View {
                     )
                     
                     LogoutButton {
-                        auth.signOut()
+                       // auth.signOut()
                     }
                     
                     FooterView(
@@ -83,22 +73,8 @@ struct SettingsView: View {
                 .padding()
             }
         }
-        .navigationBarBackButtonHidden(true) // hide system back button if in NavigationStack
-        .navigationBarTitleDisplayMode(.inline)
-        .onAppear {
-            tabBarVisibility.isVisible = false // ✅ hide tab bar
-        }
-        .onDisappear {
-            tabBarVisibility.isVisible = true // ✅ restore
-        }
-    }
-    
-}
-
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView()
-            .environmentObject(TabBarVisibility())
-            .environmentObject(AuthSession(isAuthenticated: true))
+        .navigationBarBackButtonHidden(true)
+       // .onAppear { tabBarVisibility.isVisible = false }
+        //.onDisappear { tabBarVisibility.isVisible = true }
     }
 }

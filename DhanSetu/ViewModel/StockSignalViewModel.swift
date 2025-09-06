@@ -52,15 +52,30 @@ class StockSignalViewModel: ObservableObject {
                 
                 do {
                     let decoder = JSONDecoder()
-                    let signals = try decoder.decode([StockSignal].self, from: data)
-                    self?.stockSignals = signals.sorted { signal1, signal2 in
-                        // Sort by creation date, newest first
+                    let newSignals = try decoder.decode([StockSignal].self, from: data)
+                    
+                    // Merge with existing signals
+                    var signalsDict: [String: StockSignal] = [:]
+                    if let existingSignals = self?.stockSignals {
+                        signalsDict = Dictionary(uniqueKeysWithValues: existingSignals.map { ($0.id, $0) })
+                    }
+                    
+                    for signal in newSignals {
+                        signalsDict[signal.id] = signal
+                    }
+                    
+                    // Update the array and sort
+                    var updatedSignals = Array(signalsDict.values)
+                    updatedSignals.sort { signal1, signal2 in
                         guard let date1 = ISO8601DateFormatter().date(from: signal1.createdAt ?? ""),
                               let date2 = ISO8601DateFormatter().date(from: signal2.createdAt ?? "") else {
                             return false
                         }
                         return date1 > date2
                     }
+                    
+                    self?.stockSignals = updatedSignals
+                    
                 } catch {
                     self?.errorMessage = "Failed to decode data: \(error.localizedDescription)"
                     print("Decoding error: \(error)")
@@ -75,7 +90,7 @@ class StockSignalViewModel: ObservableObject {
     func refreshSignals() { fetchStockSignals() }
     
     // Start auto-refresh every 30 seconds
-    private func startAutoRefresh() { refreshTimer = Timer.scheduledTimer(withTimeInterval: 30.0, repeats: true) { [weak self] _ in self?.fetchStockSignals() } }
+    private func startAutoRefresh() { refreshTimer = Timer.scheduledTimer(withTimeInterval: 15.0, repeats: true) { [weak self] _ in self?.fetchStockSignals() } }
     
     // Stop auto-refresh
     private func stopAutoRefresh() {

@@ -1,0 +1,4 @@
+module Crypto {
+    header "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/Crypto.build/Crypto-Swift.h"
+    requires objc
+}

@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/ConsoleKit.build/master.swiftdeps"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/checkouts/console-kit/Sources/ConsoleKit/Exports.swift": {
+    "dependencies": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/ConsoleKit.build/Exports.d",
+    "object": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/ConsoleKit.build/Exports.swift.o",
+    "swiftmodule": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/ConsoleKit.build/Exports~partial.swiftmodule",
+    "swift-dependencies": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/ConsoleKit.build/Exports.swiftdeps"
+  }
+}

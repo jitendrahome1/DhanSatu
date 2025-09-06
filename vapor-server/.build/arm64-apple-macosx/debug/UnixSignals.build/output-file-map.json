@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/UnixSignals.build/master.swiftdeps"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/checkouts/swift-service-lifecycle/Sources/UnixSignals/UnixSignal.swift": {
+    "dependencies": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/UnixSignals.build/UnixSignal.d",
+    "object": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/UnixSignals.build/UnixSignal.swift.o",
+    "swiftmodule": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/UnixSignals.build/UnixSignal~partial.swiftmodule",
+    "swift-dependencies": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/UnixSignals.build/UnixSignal.swiftdeps"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/checkouts/swift-service-lifecycle/Sources/UnixSignals/UnixSignalsSequence.swift": {
+    "dependencies": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/UnixSignals.build/UnixSignalsSequence.d",
+    "object": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/UnixSignals.build/UnixSignalsSequence.swift.o",
+    "swiftmodule": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/UnixSignals.build/UnixSignalsSequence~partial.swiftmodule",
+    "swift-dependencies": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/UnixSignals.build/UnixSignalsSequence.swiftdeps"
+  }
+}

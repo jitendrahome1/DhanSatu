@@ -1,0 +1,4 @@
+module _NIOConcurrency {
+    header "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/_NIOConcurrency.build/_NIOConcurrency-Swift.h"
+    requires objc
+}

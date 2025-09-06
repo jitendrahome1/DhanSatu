@@ -1,0 +1,4 @@
+module _NIOBase64 {
+    header "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/_NIOBase64.build/_NIOBase64-Swift.h"
+    requires objc
+}

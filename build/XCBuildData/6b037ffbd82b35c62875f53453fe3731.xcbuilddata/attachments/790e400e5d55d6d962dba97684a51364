@@ -1,0 +1,395 @@
+{
+  "" : {
+    "const-values" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanSetu-master.swiftconstvalues",
+    "dependencies" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanSetu-master.d",
+    "diagnostics" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanSetu-master.dia",
+    "emit-module-dependencies" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanSetu-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanSetu-master-emit-module.dia",
+    "swift-dependencies" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanSetu-master.swiftdeps"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/ContentView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/DhanSetuApp.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanSetuApp.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanSetuApp.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanSetuApp.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/Library/Dhan/DhanHQ.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanHQ.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanHQ.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanHQ.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/Library/Dhan/DhanHQManager.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanHQManager.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanHQManager.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanHQManager.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/Model/FundLimitsResponse.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/FundLimitsResponse.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/FundLimitsResponse.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/FundLimitsResponse.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/Model/HoldingsResponse.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/HoldingsResponse.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/HoldingsResponse.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/HoldingsResponse.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/Model/OrderListResponse.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/OrderListResponse.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/OrderListResponse.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/OrderListResponse.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/Model/PositionResponse.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PositionResponse.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PositionResponse.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PositionResponse.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/Model/StockSignal.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/StockSignal.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/StockSignal.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/StockSignal.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/Utility/AnimatedGradientBorder.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AnimatedGradientBorder.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AnimatedGradientBorder.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AnimatedGradientBorder.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/Utility/AppColors.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AppColors.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AppColors.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AppColors.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/Utility/AppConstants.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AppConstants.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AppConstants.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AppConstants.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/Utility/AuthSession.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AuthSession.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AuthSession.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AuthSession.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/Utility/CurvedShape.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/CurvedShape.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/CurvedShape.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/CurvedShape.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/Utility/CustomTabBarView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/CustomTabBarView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/CustomTabBarView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/CustomTabBarView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/Utility/DhanHQ+Extension.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanHQ+Extension.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanHQ+Extension.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanHQ+Extension.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/Utility/TabBarVisibility.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/TabBarVisibility.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/TabBarVisibility.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/TabBarVisibility.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/Utility/TabItem.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/TabItem.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/TabItem.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/TabItem.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/AIPoweredSignalsView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AIPoweredSignalsView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AIPoweredSignalsView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AIPoweredSignalsView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/APITestView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/APITestView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/APITestView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/APITestView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/ActiveClosedTradesSection.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ActiveClosedTradesSection.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ActiveClosedTradesSection.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ActiveClosedTradesSection.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/AuthRootView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AuthRootView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AuthRootView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/AuthRootView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/CategoryIconView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/CategoryIconView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/CategoryIconView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/CategoryIconView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/ClosedPositionCardView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ClosedPositionCardView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ClosedPositionCardView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ClosedPositionCardView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/CreateStockSignalView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/CreateStockSignalView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/CreateStockSignalView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/CreateStockSignalView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/CustomNavHeader.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/CustomNavHeader.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/CustomNavHeader.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/CustomNavHeader.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/DhanHQTest.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanHQTest.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanHQTest.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanHQTest.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/DhanHQViewModel.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanHQViewModel.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanHQViewModel.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanHQViewModel.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/DhanMarginHeaderView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanMarginHeaderView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanMarginHeaderView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanMarginHeaderView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/DhanMarginHeaderViewOld.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanMarginHeaderViewOld.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanMarginHeaderViewOld.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/DhanMarginHeaderViewOld.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Dummy.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/Dummy.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/Dummy.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/Dummy.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/EnhancedStockSignalCard.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/EnhancedStockSignalCard.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/EnhancedStockSignalCard.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/EnhancedStockSignalCard.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/HoldingsView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/HoldingsView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/HoldingsView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/HoldingsView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/HomeTabView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/HomeTabView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/HomeTabView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/HomeTabView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/LTPView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/LTPView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/LTPView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/LTPView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/LiveSignalsTabView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/LiveSignalsTabView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/LiveSignalsTabView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/LiveSignalsTabView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Login/LoginView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/LoginView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/LoginView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/LoginView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Login/OTPBoxesView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/OTPBoxesView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/OTPBoxesView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/OTPBoxesView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Login/OTPInputView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/OTPInputView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/OTPInputView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/OTPInputView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Login/PhoneInputView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PhoneInputView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PhoneInputView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PhoneInputView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Login/ResendTimerManager.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ResendTimerManager.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ResendTimerManager.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ResendTimerManager.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/MainBottomTabBar.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/MainBottomTabBar.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/MainBottomTabBar.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/MainBottomTabBar.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/MainStockScreenView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/MainStockScreenView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/MainStockScreenView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/MainStockScreenView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/MainTabView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/MainTabView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/MainTabView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/MainTabView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/NotificationView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/NotificationView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/NotificationView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/NotificationView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/OverallPLCardView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/OverallPLCardView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/OverallPLCardView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/OverallPLCardView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/PlaceOrderView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PlaceOrderView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PlaceOrderView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PlaceOrderView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/PlaceholderTabViews.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PlaceholderTabViews.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PlaceholderTabViews.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PlaceholderTabViews.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/PortfolioScreen.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PortfolioScreen.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PortfolioScreen.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PortfolioScreen.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/PositionFilterTabs.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PositionFilterTabs.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PositionFilterTabs.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PositionFilterTabs.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/ProfileHeaderView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ProfileHeaderView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ProfileHeaderView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ProfileHeaderView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Settings/BalanceCard.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/BalanceCard.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/BalanceCard.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/BalanceCard.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Settings/BannerCard.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/BannerCard.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/BannerCard.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/BannerCard.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Settings/FooterView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/FooterView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/FooterView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/FooterView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Settings/LogoutButton.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/LogoutButton.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/LogoutButton.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/LogoutButton.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Settings/ProfileCard.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ProfileCard.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ProfileCard.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/ProfileCard.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Settings/SettingsRow.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SettingsRow.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SettingsRow.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SettingsRow.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Settings/SettingsSection.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SettingsSection.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SettingsSection.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SettingsSection.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Settings/SettingsView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SettingsView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/SharedComponents.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SharedComponents.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SharedComponents.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SharedComponents.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/SignalCardPreview.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SignalCardPreview.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SignalCardPreview.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SignalCardPreview.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/SignalsTabView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SignalsTabView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SignalsTabView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SignalsTabView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/SplashView/BrandLogo.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/BrandLogo.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/BrandLogo.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/BrandLogo.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/SplashView/SplashView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SplashView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SplashView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/SplashView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/StockSignalCardView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/StockSignalCardView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/StockSignalCardView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/StockSignalCardView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/StockSignalsListView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/StockSignalsListView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/StockSignalsListView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/StockSignalsListView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/TabSelectionView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/TabSelectionView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/TabSelectionView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/TabSelectionView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/TabSwitcherView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/TabSwitcherView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/TabSwitcherView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/TabSwitcherView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/TopBarView.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/TopBarView.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/TopBarView.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/TopBarView.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/ViewModel/FundLimitsViewModel.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/FundLimitsViewModel.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/FundLimitsViewModel.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/FundLimitsViewModel.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/ViewModel/FundLimitsViewModelOld.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/FundLimitsViewModelOld.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/FundLimitsViewModelOld.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/FundLimitsViewModelOld.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/ViewModel/HoldingsViewModel.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/HoldingsViewModel.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/HoldingsViewModel.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/HoldingsViewModel.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/ViewModel/LTPViewModel.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/LTPViewModel.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/LTPViewModel.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/LTPViewModel.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/ViewModel/OrderViewModel.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/OrderViewModel.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/OrderViewModel.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/OrderViewModel.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/ViewModel/PositionsViewModel.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PositionsViewModel.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PositionsViewModel.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/PositionsViewModel.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/ViewModel/StockSignalViewModel.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/StockSignalViewModel.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/StockSignalViewModel.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/StockSignalViewModel.o"
+  },
+  "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/build/DhanSetu.build/Release-iphoneos/DhanSetu.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "source": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/LTPView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Get LTP",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "LTP: ₹%.2f",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 36
+        }
+      },
+      {
+        "comment": "",
+        "key": "Security ID",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 10
+        }
+      },
+      {
+        "comment": "",
+        "key": "Exchange",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 14
+        }
+      },
+      {
+        "comment": "",
+        "key": "Fetch LTP",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "Fetching LTP...",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "NSE",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "BSE",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "MCX",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 17
+        }
+      }
+    ]
+  },
+  "version": 1
+}

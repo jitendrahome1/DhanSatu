@@ -1,0 +1,4 @@
+module Fluent {
+    header "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/Fluent.build/Fluent-Swift.h"
+    requires objc
+}

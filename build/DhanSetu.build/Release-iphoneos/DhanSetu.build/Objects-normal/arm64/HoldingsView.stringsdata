@@ -1,0 +1,40 @@
+{
+  "source": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/HoldingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Holdings",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 61
+        }
+      },
+      {
+        "comment": "",
+        "key": "Loading Holdings...",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 10
+        }
+      },
+      {
+        "comment": "",
+        "key": "Qty: %lld | Avg Price: ₹%.2f",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "LTP: ₹%.2f",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 23
+        }
+      }
+    ]
+  },
+  "version": 1
+}

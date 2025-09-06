@@ -1,0 +1,4 @@
+module ServiceLifecycle {
+    header "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/ServiceLifecycle.build/ServiceLifecycle-Swift.h"
+    requires objc
+}

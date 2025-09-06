@@ -1,0 +1,4 @@
+module X509 {
+    header "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/X509.build/X509-Swift.h"
+    requires objc
+}

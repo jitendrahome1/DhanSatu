@@ -1,0 +1,56 @@
+{
+  "source": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/OverallPLCardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Overall P&L",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 8
+        }
+      },
+      {
+        "comment": "",
+        "key": "-₹3,910.00",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 11
+        }
+      },
+      {
+        "comment": "",
+        "key": "On 6 positions",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "P&L for Tue 01 Jul, 2025 · Verified by Stockwiz · 11:10 PM",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "Broker Connected",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "Refresh Now",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 41
+        }
+      }
+    ]
+  },
+  "version": 1
+}

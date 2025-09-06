@@ -1,0 +1,4 @@
+module ServiceLifecycleTestKit {
+    header "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/ServiceLifecycleTestKit.build/ServiceLifecycleTestKit-Swift.h"
+    requires objc
+}

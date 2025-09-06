@@ -1,0 +1,152 @@
+{
+  "source": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/CreateStockSignalView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Create Signal",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "Stock Name",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter stock name",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "Current Price",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter current price",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 40
+        }
+      },
+      {
+        "comment": "",
+        "key": "Profit Percent",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter profit percent",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "Stop Loss",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter stop loss",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 62
+        }
+      },
+      {
+        "comment": "",
+        "key": "Target",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 70
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter target",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 73
+        }
+      },
+      {
+        "comment": "",
+        "key": "Status",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "Status",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "Entry Date",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 94
+        }
+      },
+      {
+        "comment": "",
+        "key": "Entry Date",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 97
+        }
+      },
+      {
+        "comment": "",
+        "key": "Creating...",
+        "location": {
+          "startingColumn": 60,
+          "startingLine": 110
+        }
+      },
+      {
+        "comment": "",
+        "key": "Create Signal",
+        "location": {
+          "startingColumn": 76,
+          "startingLine": 110
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 136
+        }
+      }
+    ]
+  },
+  "version": 1
+}

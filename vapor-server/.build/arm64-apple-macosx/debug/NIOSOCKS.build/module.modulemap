@@ -1,0 +1,4 @@
+module NIOSOCKS {
+    header "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/NIOSOCKS.build/NIOSOCKS-Swift.h"
+    requires objc
+}

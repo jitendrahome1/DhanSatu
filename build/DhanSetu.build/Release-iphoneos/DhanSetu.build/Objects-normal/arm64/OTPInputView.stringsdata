@@ -1,0 +1,56 @@
+{
+  "source": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Login/OTPInputView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Code sent to",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "Change",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "Verifying…",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "Verify",
+        "location": {
+          "startingColumn": 57,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "Resend in %llds",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "Resend OTP",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 46
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,4 @@
+module ConsoleKit {
+    header "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/ConsoleKit.build/ConsoleKit-Swift.h"
+    requires objc
+}

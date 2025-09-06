@@ -1,0 +1,24 @@
+{
+  "source": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Settings/FooterView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "App Version : %@",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 10
+        }
+      },
+      {
+        "comment": "",
+        "key": "SEBI Number : %@",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 13
+        }
+      }
+    ]
+  },
+  "version": 1
+}

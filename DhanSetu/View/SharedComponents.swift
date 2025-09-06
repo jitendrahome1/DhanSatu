@@ -268,101 +268,80 @@ struct FilterChip: View {
     }
 }
 
-// MARK: - Stock Signal Card (Basic version for Home)
+// MARK: - Stock Signal Card (Dynamic version for Home)
 struct StockSignalCard: View {
+    let stockSignal: StockSignal
     var body: some View {
         VStack(spacing: 0) {
+            // Top tags
             HStack {
-                HStack(spacing: 4) {
-                    Image(systemName: "chart.bar.fill")
-                        .foregroundColor(.white)
-                        .font(.caption)
-                    
-                    Text("Analyst Signal")
-                        .font(.caption)
-                        .foregroundColor(.white)
-                }
-                .padding(.horizontal, 8)
-                .padding(.vertical, 4)
-                .background(Color.brown)
-                .cornerRadius(4)
-                
+                Text("Swing Long")
+                    .font(.caption)
+                    .fontWeight(.medium)
+                    .foregroundColor(.white)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 4)
+                    .background(Color.orange)
+                    .cornerRadius(4)
                 Spacer()
-                
-                HStack(spacing: 8) {
-                    Text("Swing")
-                        .font(.caption)
-                        .fontWeight(.medium)
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 8)
-                        .padding(.vertical, 4)
-                        .background(Color.orange)
-                        .cornerRadius(4)
-                    
-                    Text("Equity")
-                        .font(.caption)
-                        .fontWeight(.medium)
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 8)
-                        .padding(.vertical, 4)
-                        .background(Color.blue)
-                        .cornerRadius(4)
-                }
+                Text("Stock Options")
+                    .font(.caption)
+                    .fontWeight(.medium)
+                    .foregroundColor(.white)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 4)
+                    .background(Color.blue)
+                    .cornerRadius(4)
+                Text("Call")
+                    .font(.caption)
+                    .fontWeight(.medium)
+                    .foregroundColor(.white)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 4)
+                    .background(Color.green)
+                    .cornerRadius(4)
             }
-            .padding(16)
-            .background(Color.white)
-            
+            .padding(8)
+            // Stock Info
             HStack(spacing: 12) {
-                // Company Logo
                 Circle()
                     .fill(Color.orange)
                     .frame(width: 40, height: 40)
                     .overlay {
-                        Text("M")
+                        Text(stockSignal.stockName.prefix(1))
                             .font(.title3)
                             .fontWeight(.bold)
                             .foregroundColor(.white)
                     }
-                
                 VStack(alignment: .leading, spacing: 4) {
+                    Text(stockSignal.stockName)
+                        .font(.headline)
+                        .fontWeight(.semibold)
                     HStack {
-                        Text("MEDANTA")
-                            .font(.headline)
-                            .fontWeight(.semibold)
-                        
                         Image(systemName: "building.2")
                             .font(.caption)
                             .foregroundColor(.gray)
-                        
                         Text("NSE")
                             .font(.caption)
                             .foregroundColor(.gray)
                     }
-                    
-                    Text("Global Health Limited")
-                        .font(.caption)
-                        .foregroundColor(.gray)
                 }
-                
                 Spacer()
-                
                 VStack(alignment: .trailing, spacing: 4) {
-                    Text("₹1,400.10")
+                    Text("₹\(stockSignal.formattedCurrentPrice)")
                         .font(.headline)
                         .fontWeight(.semibold)
-                    
                     HStack(spacing: 4) {
-                        Text("+₹3.80")
+                        Text("+₹3.35")
                             .foregroundColor(.green)
-                        Text("(+0.27%)")
+                        Text(stockSignal.formattedProfitPercent)
                             .foregroundColor(.green)
                     }
                     .font(.caption)
                 }
             }
-            .padding(16)
-            .background(Color.white)
-            
+            .padding(8)
+            // Live
             HStack {
                 Text("Live")
                     .font(.caption)
@@ -372,59 +351,124 @@ struct StockSignalCard: View {
                     .padding(.vertical, 4)
                     .background(Color.red)
                     .cornerRadius(4)
-                
                 Spacer()
             }
-            .padding(16)
-            .background(Color.white)
-            
-            // Chart placeholder
-            Rectangle()
-                .fill(LinearGradient(
-                    colors: [Color.green.opacity(0.3), Color.red.opacity(0.3)],
-                    startPoint: .leading,
-                    endPoint: .trailing
-                ))
-                .frame(height: 60)
-                .overlay {
-                    HStack {
-                        Circle()
-                            .fill(Color.green)
-                            .frame(width: 8, height: 8)
-                        
-                        Rectangle()
-                            .fill(Color.green)
-                            .frame(height: 2)
-                        
-                        Circle()
-                            .fill(Color.red)
-                            .frame(width: 8, height: 8)
-                        
-                        Rectangle()
-                            .fill(Color.red)
-                            .frame(height: 2)
-                        
-                        Circle()
-                            .fill(Color.green)
-                            .frame(width: 8, height: 8)
-                    }
-                    .padding(.horizontal, 20)
+            .padding(8)
+            // Progress
+            HStack {
+                Text("SL")
+                    .font(.caption2)
+                    .foregroundColor(.gray)
+                Rectangle()
+                    .fill(Color.red)
+                    .frame(height: 4)
+                    .frame(maxWidth: .infinity)
+                VStack(spacing: 4) {
+                    Text("Entry")
+                        .font(.caption2)
+                        .foregroundColor(.gray)
+                    Text(stockSignal.formattedEntryDate)
+                        .font(.caption2)
+                        .foregroundColor(.gray)
                 }
+                Rectangle()
+                    .fill(Color.green)
+                    .frame(height: 4)
+                    .frame(maxWidth: .infinity)
+                Text("Target")
+                    .font(.caption2)
+                    .foregroundColor(.gray)
+            }
+            .padding(8)
+            // Strategy and Status
+            HStack {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Strategy")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                    Text("Momentum Edge")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                }
+                Spacer()
+                VStack(alignment: .trailing, spacing: 4) {
+                    Text("Status")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                    Text(stockSignal.status)
+                        .font(.subheadline)
+                        .fontWeight(.medium)
+                        .foregroundColor(.green)
+                }
+            }
+            .padding(8)
+            // Price details
+            HStack(spacing: 0) {
+                VStack(spacing: 4) {
+                    Text("Entry")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                    Text("₹45.50")
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                }
+                .frame(maxWidth: .infinity)
+                VStack(spacing: 4) {
+                    Text("Stop Loss")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                    Text("₹\(stockSignal.formattedStopLoss)")
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                }
+                .frame(maxWidth: .infinity)
+                VStack(spacing: 4) {
+                    Text("Target")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                    Text("₹\(stockSignal.formattedTarget)")
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                }
+                .frame(maxWidth: .infinity)
+            }
+            .padding(8)
+            // Trade Now
+            Button(action: {}) {
+                Text("Trade Now")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 8)
+                    .background(Color.green)
+                    .cornerRadius(12)
+            }
+            .padding(8)
         }
+        .frame(width: 350)
         .background(Color.white)
         .cornerRadius(12)
+        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.gray.opacity(0.2), lineWidth: 1))
         .shadow(color: .black.opacity(0.1), radius: 2, x: 0, y: 1)
     }
 }
 
-#Preview {
-    ScrollView {
-        VStack(spacing: 16) {
-            FeatureIconsGrid()
-            AIPoweredSignalsCard()
-            EquityFOTabs(selectedTab: .constant("Equity"))
-            StockSignalCard()
-        }
-        .padding()
-    }
-}
+//#Preview {
+//    ScrollView {
+//        VStack(spacing: 16) {
+//            FeatureIconsGrid()
+//            AIPoweredSignalsCard()
+//            EquityFOTabs(selectedTab: .constant("Equity"))
+//            ScrollView(.horizontal, showsIndicators: false) {
+//                HStack(spacing: 16) {
+//                    ForEach(signalViewModel.stockSignals) { stockSignal in
+//                        StockSignalCard(stockSignal: stockSignal)
+//                    }
+//                }
+//                .padding(.horizontal, 16)
+//            }
+//        }
+//        .padding()
+//    }
+//}

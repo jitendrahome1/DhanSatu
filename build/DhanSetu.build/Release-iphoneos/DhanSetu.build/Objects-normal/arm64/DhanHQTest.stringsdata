@@ -1,0 +1,40 @@
+{
+  "source": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/DhanHQTest.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Orders: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 9
+        }
+      },
+      {
+        "comment": "",
+        "key": "No data",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 13
+        }
+      },
+      {
+        "comment": "",
+        "key": "Error: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 11
+        }
+      },
+      {
+        "comment": "",
+        "key": "Fetch Orders",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 15
+        }
+      }
+    ]
+  },
+  "version": 1
+}

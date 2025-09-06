@@ -1,0 +1,4 @@
+module NIOHTTPTypesHTTP1 {
+    header "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/NIOHTTPTypesHTTP1.build/NIOHTTPTypesHTTP1-Swift.h"
+    requires objc
+}

@@ -1,0 +1,24 @@
+{
+  "source": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/SplashView/BrandLogo.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "DhanSetu",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "DhanSetu",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 21
+        }
+      }
+    ]
+  },
+  "version": 1
+}

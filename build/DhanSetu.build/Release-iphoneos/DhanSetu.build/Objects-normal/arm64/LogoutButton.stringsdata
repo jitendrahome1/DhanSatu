@@ -1,0 +1,16 @@
+{
+  "source": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/Settings/LogoutButton.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Logout",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 8
+        }
+      }
+    ]
+  },
+  "version": 1
+}

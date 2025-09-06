@@ -1,0 +1,40 @@
+{
+  "source": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/ClosedPositionCardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "NIFTY 3 JUL 25400 PUT",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 23
+        }
+      },
+      {
+        "comment": "",
+        "key": "375 X Avg. ₹71.37",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "+₹5,126.25",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "NIFTY",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 11
+        }
+      }
+    ]
+  },
+  "version": 1
+}

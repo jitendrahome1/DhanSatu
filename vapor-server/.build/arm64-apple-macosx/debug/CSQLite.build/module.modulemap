@@ -1,0 +1,4 @@
+module CSQLite {
+    umbrella "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/checkouts/sqlite-nio/Sources/CSQLite/include"
+    export *
+}

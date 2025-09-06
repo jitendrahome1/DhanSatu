@@ -5,7 +5,7 @@ struct HomeTabView: View {
     @State private var selectedTradeTab: String = "All Trades"
     @State private var selectedFilter: String = "All"
     @State private var selectedEquityTab: String = "Equity"
-    
+    @StateObject private var signalViewModel = StockSignalViewModel()
     var body: some View {
         VStack(spacing: 0) {
             // Header Section
@@ -29,9 +29,10 @@ struct HomeTabView: View {
                     // Feature Icons Grid
                     FeatureIconsGrid()
                     
+                    
                     // AI-Powered Signals Card
                     AIPoweredSignalsCard()
-                    
+                  
                     // Equity/F&O Tabs
                     EquityFOTabs(selectedTab: $selectedEquityTab)
                     
@@ -41,23 +42,38 @@ struct HomeTabView: View {
                         selectedFilter: $selectedFilter
                     )
                     
-                    // Stock Signal Card
-                    StockSignalCard()
+                    if signalViewModel.isLoading {
+                        ProgressView()
+                            .padding()
+                    } else if let error = signalViewModel.errorMessage {
+                        Text(error)
+                            .foregroundColor(.red)
+                            .padding()
+                    } else if !signalViewModel.stockSignals.isEmpty {
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 20) {
+                                ForEach(signalViewModel.stockSignals) { signal in
+                                    StockSignalCard(stockSignal: signal)
+                                        .frame(width: 350)
+                                        .transition(.opacity)
+                                }
+                            }
+                            .animation(.easeInOut, value: signalViewModel.stockSignals)
+                            .padding(.horizontal)
+                        }
+                        .padding(.vertical)
+                    } else {
+                        Text("No signals available")
+                            .padding()
+                    }
                 }
-                .padding(.horizontal, 16)
-                .padding(.top, 16)
-                .padding(.bottom, 100) // Space for bottom tab bar
-            }
-            .background(Color(.systemGroupedBackground))
+            } //.padding(.horizontal, 16)
             
-            // Bottom Tab Bar - Fixed at bottom
-            MainBottomTabBar(selectedTab: $selectedMainTab)
-        }
-        .background(Color(.systemGroupedBackground))
-        .navigationBarHidden(true)
-    }
-}
+            .onAppear {
+                signalViewModel.fetchStockSignals()
+            }
 
-#Preview {
-    HomeTabView(selectedMainTab: .constant("Home"))
+            MainBottomTabBar(selectedTab: $selectedMainTab)
+        }.padding(.horizontal, 16)
+    }
 }

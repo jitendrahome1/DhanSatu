@@ -1,0 +1,4 @@
+module XCTVapor {
+    header "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/XCTVapor.build/XCTVapor-Swift.h"
+    requires objc
+}

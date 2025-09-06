@@ -1,0 +1,24 @@
+{
+  "source": "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/DhanSetu/View/ActiveClosedTradesSection.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Active Trades",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 12
+        }
+      },
+      {
+        "comment": "",
+        "key": "Closed Trades",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 33
+        }
+      }
+    ]
+  },
+  "version": 1
+}

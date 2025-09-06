@@ -1,0 +1,4 @@
+module ComplexModule {
+    header "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/ComplexModule.build/ComplexModule-Swift.h"
+    requires objc
+}

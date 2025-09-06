@@ -1,0 +1,4 @@
+module SwiftASN1 {
+    header "/Users/jitendra.agarwal2/Desktop/Jitendra Workspace/SwiftUI/DhanProejct/vapor-server/.build/arm64-apple-macosx/debug/SwiftASN1.build/SwiftASN1-Swift.h"
+    requires objc
+}
