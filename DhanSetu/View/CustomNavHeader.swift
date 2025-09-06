@@ -1,8 +1,9 @@
 import SwiftUI
 
 enum NavHeaderStyle {
-    case home     // greeting, search, notification
-    case settings // back button, title, toggle
+    case home         // greeting, search, notification
+    case settings     // back button, title, toggle
+    case notification // back button, title, search
 }
 
 struct CustomNavHeader: View {
@@ -84,6 +85,22 @@ struct CustomNavHeader: View {
                     .toggleStyle(SwitchToggleStyle(tint: .green))
                     .labelsHidden()
                     .frame(width: 50)
+                    
+            case .notification:
+                Button(action: { onBackTapped?() }) {
+                    Image(systemName: "chevron.left")
+                        .font(.system(size: 20, weight: .semibold))
+                        .foregroundColor(.blue)
+                }
+                Text("Notification")
+                    .font(.headline)
+                    .foregroundColor(.primary)
+                Spacer()
+                Button(action: { onSearchTapped?() }) {
+                    Image(systemName: "magnifyingglass")
+                        .font(.title3)
+                        .foregroundColor(.primary)
+                }
             }
         }
         .padding(.horizontal, 16)

@@ -6,6 +6,7 @@ struct HomeTabView: View {
     @State private var selectedFilter: String = "All"
     @State private var selectedEquityTab: String = "Equity"
     @StateObject private var signalViewModel = StockSignalViewModel()
+    @State private var showNotifications = false
     var body: some View {
         VStack(spacing: 0) {
             // Header Section
@@ -16,7 +17,7 @@ struct HomeTabView: View {
                     print("Search tapped in Home")
                 },
                 onNotificationTapped: {
-                    print("Notification tapped in Home")
+                    showNotifications = true
                 }
             )
             
@@ -74,6 +75,15 @@ struct HomeTabView: View {
             }
 
             MainBottomTabBar(selectedTab: $selectedMainTab)
-        }.padding(.horizontal, 16)
+        }
+        .padding(.horizontal, 16)
+        .background(
+            NavigationLink(
+                destination: NotificationListView(),
+                isActive: $showNotifications,
+                label: { EmptyView() }
+            )
+            .hidden()
+        )
     }
 }

@@ -10,6 +10,7 @@ public func configure(_ app: Application) throws {
     app.databases.use(.sqlite(.file("db.sqlite")), as: .sqlite)
 
     app.migrations.add(CreateStockSignal())
+    app.migrations.add(CreateNotification())
 
     // Serve Public/ static files
     app.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
